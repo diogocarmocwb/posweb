@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model CSS</title>
+    <link rel="stylesheet" href="boxmodel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Demonstração do Box Model CSS</h1>
+
+      <section class="exemplo-section">
+        <h2>O que é Box Model?</h2>
+        <p>
+          O box model é composto por 4 camadas que envolvem o conteúdo de um
+          elemento:
+        </p>
+        <ul>
+          <li>
+            <strong>Content (Conteúdo):</strong> O texto, imagens e outros
+            elementos dentro da caixa
+          </li>
+          <li>
+            <strong>Padding:</strong> Espaço interno entre o conteúdo e a borda
+          </li>
+          <li><strong>Border:</strong> A borda que envolve o padding</li>
+          <li>
+            <strong>Margin:</strong> Espaço externo entre a borda e outros
+            elementos
+          </li>
+        </ul>
+      </section>
+
+      <section class="exemplo-section">
+        <h2>Exemplos Práticos</h2>
+
+        <div class="exemplo">
+          <h3>Box com Padding</h3>
+          <div class="box box-padding">
+            <span class="label">Content</span>
+          </div>
+          <p class="descricao">
+            Este elemento tem padding de 20px (espaço interno)
+          </p>
+        </div>
+
+        <div class="exemplo">
+          <h3>Box com Border</h3>
+          <div class="box box-border">
+            <span class="label">Content</span>
+          </div>
+          <p class="descricao">
+            Este elemento tem border de 5px (borda visível)
+          </p>
+        </div>
+
+        <div class="exemplo">
+          <h3>Box com Margin</h3>
+          <div class="box box-margin">
+            <span class="label">Content</span>
+          </div>
+          <p class="descricao">
+            Este elemento tem margin de 30px (espaço externo)
+          </p>
+        </div>
+
+        <div class="exemplo">
+          <h3>Box Completo (Content + Padding + Border + Margin)</h3>
+          <div class="box box-completo">
+            <span class="label">Content</span>
+          </div>
+          <p class="descricao">
+            Este elemento demonstra todas as camadas do box model
+          </p>
+        </div>
+      </section>
+
+      <section class="exemplo-section">
+        <h2>Investigação do Box Model</h2>
+        <p>
+          Abra as DevTools (F12) e inspecione os elementos acima para visualizar
+          o box model de cada um no painel de inspeção.
+        </p>
+        <div class="box box-investigacao">
+          <span class="label">Inspecione este elemento!</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
