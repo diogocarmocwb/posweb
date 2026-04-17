@@ -1,0 +1,56 @@
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+aside {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.destaque {
+  grid-column: span 2;
+  background-color: #e8f4fd;
+  border-color: #2196f3;
+}
